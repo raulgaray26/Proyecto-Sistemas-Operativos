@@ -1,2 +1,6 @@
-# Proyecto-Sistemas-Operativos
-Proyecto del segundo parcial de Sistemas Operativos.
+# Proyecto de UCOM 418 - Sistemas Operativos (Paralelo 81)
+# Descripción
+Proyecto Final de la materia UCOM 418 - Sistemas Operativos (Paralelo 81)
+# Integrantes del grupo
+Raúl Alejandor Garay Vinueza
+Leonor Molina Zapata
