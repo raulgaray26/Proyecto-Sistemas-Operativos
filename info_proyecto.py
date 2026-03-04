@@ -6,5 +6,3 @@ def descripcion_proyecto():
     print(titulo)
     print("\nDescripción del proyecto:")
     print(descripcion)
-
-descripcion_proyecto()
