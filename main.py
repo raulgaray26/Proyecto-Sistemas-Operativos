@@ -29,6 +29,11 @@ def main():
                 Estudiante(3, "Andrea", "Usar Word"),
                 Estudiante(4, "Carlos", "Preparar exposición"),
                 Estudiante(5, "María", "Revisar correo institucional")
+                Estudiante(6, "Karel", "Escribir un correo a Wong")
+                Estudiante(7, "Juan Diego", "Instalar Linux")
+                Estudiante(8, "Sebastian", "Collage de photodumps")
+                Estudiante(9, "Daniel", "Stremear en Youtube")
+                Estudiante(10, "Justin", "Jugar Genshin")
             ]
 
             laboratorio.recibir_estudiantes(estudiantes)
