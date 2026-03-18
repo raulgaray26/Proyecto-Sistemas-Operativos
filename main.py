@@ -1,5 +1,6 @@
 import info_estudiantes
 import info_proyecto
+import bitacora
 from estudiante import Estudiante
 from laboratorio import Laboratorio
 
@@ -21,23 +22,30 @@ def main():
             info_proyecto.descripcion_proyecto()
 
         elif opcion == "3":
+            # Inicializar la bitácora antes de arrancar la simulación
+            bitacora.configurar_bitacora()
+
             laboratorio = Laboratorio(3)
 
             estudiantes = [
-                Estudiante(1, "Leonor", "Investigar en internet"),
-                Estudiante(2, "Raul", "Hacer tarea de Python"),
-                Estudiante(3, "Andrea", "Usar Word"),
-                Estudiante(4, "Carlos", "Preparar exposición"),
-                Estudiante(5, "María", "Revisar correo institucional")
-                Estudiante(6, "Karel", "Escribir un correo a Wong")
-                Estudiante(7, "Juan Diego", "Instalar Linux")
-                Estudiante(8, "Sebastian", "Collage de photodumps")
-                Estudiante(9, "Daniel", "Stremear en Youtube")
-                Estudiante(10, "Justin", "Jugar Genshin")
+                Estudiante(1,  "Leonor",     "Investigar en internet"),
+                Estudiante(2,  "Raul",       "Hacer tarea de Python"),
+                Estudiante(3,  "Andrea",     "Usar Word"),
+                Estudiante(4,  "Carlos",     "Preparar exposición"),
+                Estudiante(5,  "María",      "Revisar correo institucional"),
+                Estudiante(6,  "Karel",      "Escribir un correo a Wong"),
+                Estudiante(7,  "Juan Diego", "Instalar Linux"),
+                Estudiante(8,  "Sebastian",  "Collage de photodumps"),
+                Estudiante(9,  "Daniel",     "Stremear en Youtube"),
+                Estudiante(10, "Justin",     "Jugar Genshin"),
             ]
 
             laboratorio.recibir_estudiantes(estudiantes)
             laboratorio.abrir()
+
+        elif opcion == "4":
+            print("Saliendo del programa.")
+            break
 
         else:
             print("Opción no válida.")
